@@ -5,7 +5,7 @@
         "title": "Deluxe Wedding Bliss",
         "price": 25000,
         "description": "A luxurious wedding package offering top-tier services, ensuring a magical and stress-free day.",
-        "image": "https://example.com/images/deluxe-wedding.jpg",
+        "image": "https://i.ibb.co/2qwtXgL/image.png",
         "category": "Platinum"
     },
     {
@@ -23,7 +23,7 @@
         "title": "Sweet Baby Soiree",
         "price": 750,
         "description": "A charming and elegant baby shower package to celebrate the upcoming arrival.",
-        "image": "https://example.com/images/baby-shower.jpg",
+        "image": "https://i.ibb.co/DK49dvD/image.png",
         "category": "Silver"
     },
     {
@@ -32,7 +32,7 @@
         "title": "Golden Memories Package",
         "price": 2000,
         "description": "Celebrate years of love and happiness with this exquisite anniversary package.",
-        "image": "https://example.com/images/golden-anniversary.jpg",
+        "image": "https://i.ibb.co/hFsKjvn/image.png",
         "category": "Gold"
     },
     {
@@ -41,7 +41,7 @@
         "title": "Sparkling Engagement Celebration",
         "price": 1500,
         "description": "Announce your love with style and grace with this unforgettable engagement party package.",
-        "image": "https://example.com/images/sparkling-engagement.jpg",
+        "image": "https://i.ibb.co/xSyRMrs/image.png",
         "category": "Gold"
     },
     {
@@ -50,7 +50,7 @@
         "title": "Elegant Retirement Affair",
         "price": 1800,
         "description": "Honor years of hard work and dedication with this sophisticated retirement party package.",
-        "image": "https://example.com/images/elegant-retirement.jpg",
+        "image": "https://i.ibb.co/nBQbDRs/image.png",
         "category": "Gold"
     },
     {
@@ -59,7 +59,7 @@
         "title": "Whimsical Wedding Wonderland",
         "price": 20000,
         "description": "A delightful and whimsical wedding package creating a fairytale-like atmosphere.",
-        "image": "https://example.com/images/whimsical-wedding.jpg",
+        "image": "https://i.ibb.co/Rytb6dc/image.png",
         "category": "Platinum"
     },
     {
@@ -68,7 +68,7 @@
         "title": "Princess Birthday Dream",
         "price": 550,
         "description": "Make your little one feel like royalty with our enchanting princess-themed birthday package.",
-        "image": "https://example.com/images/princess-birthday.jpg",
+        "image": "https://i.ibb.co/gtGd5fH/image.png",
         "category": "Silver"
     },
     {
@@ -77,7 +77,7 @@
         "title": "Little Gentleman Shower",
         "price": 700,
         "description": "A classy and sweet baby shower theme celebrating your upcoming little gentleman.",
-        "image": "https://example.com/images/little-gentleman.jpg",
+        "image": "https://i.ibb.co/5kQRCR9/image.png",
         "category": "Silver"
     },
     {
@@ -86,7 +86,7 @@
         "title": "Silver Serenity Package",
         "price": 1800,
         "description": "Mark the milestone with elegance and tranquility with our Silver Serenity anniversary package.",
-        "image": "https://example.com/images/silver-serenity.jpg",
+        "image": "https://i.ibb.co/qJq3cSM/image.png",
         "category": "Silver"
     },
     {
@@ -95,7 +95,7 @@
         "title": "Tropical Engagement Fiesta",
         "price": 1300,
         "description": "Celebrate your love under the sun with this vibrant and festive engagement party package.",
-        "image": "https://example.com/images/tropical-engagement.jpg",
+        "image": "https://i.ibb.co/L5YrHRV/image.png",
         "category": "Silver"
     },
     {
@@ -104,7 +104,7 @@
         "title": "Golf Lover's Retirement",
         "price": 2000,
         "description": "Ideal for golf enthusiasts, this retirement party package celebrates leisure and relaxation.",
-        "image": "https://example.com/images/golf-retirement.jpg",
+        "image": "https://i.ibb.co/PgGzxMv/image.png",
         "category": "Gold"
     }
 ]
