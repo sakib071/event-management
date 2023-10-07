@@ -1,0 +1,110 @@
+[
+    {
+        "id": "1",
+        "eventType": "Wedding Management",
+        "title": "Deluxe Wedding Bliss",
+        "price": 25000,
+        "description": "A luxurious wedding package offering top-tier services, ensuring a magical and stress-free day.",
+        "image": "https://example.com/images/deluxe-wedding.jpg",
+        "category": "Platinum"
+    },
+    {
+        "id": "2",
+        "eventType": "Birthday Parties",
+        "title": "Superhero Birthday Bash",
+        "price": 500,
+        "description": "A fun and energetic superhero-themed birthday party package for kids.",
+        "image": "https://i.ibb.co/7y14xRb/image.png",
+        "category": "Silver"
+    },
+    {
+        "id": "3",
+        "eventType": "Baby Showers",
+        "title": "Sweet Baby Soiree",
+        "price": 750,
+        "description": "A charming and elegant baby shower package to celebrate the upcoming arrival.",
+        "image": "https://example.com/images/baby-shower.jpg",
+        "category": "Silver"
+    },
+    {
+        "id": "4",
+        "eventType": "Anniversaries",
+        "title": "Golden Memories Package",
+        "price": 2000,
+        "description": "Celebrate years of love and happiness with this exquisite anniversary package.",
+        "image": "https://example.com/images/golden-anniversary.jpg",
+        "category": "Gold"
+    },
+    {
+        "id": "5",
+        "eventType": "Engagement Parties",
+        "title": "Sparkling Engagement Celebration",
+        "price": 1500,
+        "description": "Announce your love with style and grace with this unforgettable engagement party package.",
+        "image": "https://example.com/images/sparkling-engagement.jpg",
+        "category": "Gold"
+    },
+    {
+        "id": "6",
+        "eventType": "Retirement Parties",
+        "title": "Elegant Retirement Affair",
+        "price": 1800,
+        "description": "Honor years of hard work and dedication with this sophisticated retirement party package.",
+        "image": "https://example.com/images/elegant-retirement.jpg",
+        "category": "Gold"
+    },
+    {
+        "id": "7",
+        "eventType": "Wedding Management",
+        "title": "Whimsical Wedding Wonderland",
+        "price": 20000,
+        "description": "A delightful and whimsical wedding package creating a fairytale-like atmosphere.",
+        "image": "https://example.com/images/whimsical-wedding.jpg",
+        "category": "Platinum"
+    },
+    {
+        "id": "8",
+        "eventType": "Birthday Parties",
+        "title": "Princess Birthday Dream",
+        "price": 550,
+        "description": "Make your little one feel like royalty with our enchanting princess-themed birthday package.",
+        "image": "https://example.com/images/princess-birthday.jpg",
+        "category": "Silver"
+    },
+    {
+        "id": "9",
+        "eventType": "Baby Showers",
+        "title": "Little Gentleman Shower",
+        "price": 700,
+        "description": "A classy and sweet baby shower theme celebrating your upcoming little gentleman.",
+        "image": "https://example.com/images/little-gentleman.jpg",
+        "category": "Silver"
+    },
+    {
+        "id": "10",
+        "eventType": "Anniversaries",
+        "title": "Silver Serenity Package",
+        "price": 1800,
+        "description": "Mark the milestone with elegance and tranquility with our Silver Serenity anniversary package.",
+        "image": "https://example.com/images/silver-serenity.jpg",
+        "category": "Silver"
+    },
+    {
+        "id": "11",
+        "eventType": "Engagement Parties",
+        "title": "Tropical Engagement Fiesta",
+        "price": 1300,
+        "description": "Celebrate your love under the sun with this vibrant and festive engagement party package.",
+        "image": "https://example.com/images/tropical-engagement.jpg",
+        "category": "Silver"
+    },
+    {
+        "id": "12",
+        "eventType": "Retirement Parties",
+        "title": "Golf Lover's Retirement",
+        "price": 2000,
+        "description": "Ideal for golf enthusiasts, this retirement party package celebrates leisure and relaxation.",
+        "image": "https://example.com/images/golf-retirement.jpg",
+        "category": "Gold"
+    }
+]
