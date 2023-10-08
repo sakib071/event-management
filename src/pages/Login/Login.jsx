@@ -78,6 +78,7 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button className="btn btn-neutral">Login</button>
                         </div>
+                        <div className="divider">OR</div>
                         <div className="form-control mt-1">
                             <button onClick={handleGoogleSignIn} className="btn hover:bg-red-600 bg-red-500 text-white">Google</button>
                         </div>

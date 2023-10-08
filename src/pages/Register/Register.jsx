@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
@@ -8,6 +9,7 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [success, setSuccess] = useState('');
     const [registerError, setRegisterError] = useState('');
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -36,6 +38,7 @@ const Register = () => {
                 setSuccess('User created successfully');
                 setEmail('');
                 setPassword('');
+                navigate('/');
             })
             .catch(error => {
                 console.error(error);
@@ -49,7 +52,7 @@ const Register = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Register now!</h1>
                     </div>
-                    
+
                     <div className="card flex-shrink-0 w-[70vw] max-w-sm shadow-2xl bg-base-100">
                         <form className="card-body" onSubmit={handleRegister}>
                             <div className="form-control">

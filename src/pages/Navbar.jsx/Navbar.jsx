@@ -16,11 +16,11 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/services">Services</NavLink></li>
         <li><NavLink to="/gallery">Event Gallery</NavLink></li>
-        <li><NavLink to="/contacts">Contact Us</NavLink></li>
+        <li><NavLink to="/contact">Contact Us</NavLink></li>
         {!user && <li><NavLink to="/register">Register</NavLink></li>}
     </>
     return (
-        <div className="navbar p-6 bg-base-100 justify-evenly">
+        <div className="navbar z-10 fixed bg-base-100 top-0 p-6 h-[5vh] shadow-md justify-evenly">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost uppercase text-2xl font-bold text-gray-900">Social management</a>
+                <a className="uppercase text-xl font-bold text-gray-900">EngageNinja</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu space-x-5 menu-horizontal px-1">
