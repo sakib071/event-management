@@ -9,6 +9,9 @@ import Contact from "../pages/Contact/Contact";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../Profile/Profile";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import DetailedPage from "../pages/DetailedPage/DetailedPage";
+
+
 
 const router = createBrowserRouter([
     {
@@ -17,7 +20,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>,
+                element: <Home ></Home>,
                 loader: () => fetch('/data.json')
             },
             {
@@ -43,6 +46,11 @@ const router = createBrowserRouter([
             {
                 path: '/profile',
                 element: <Profile></Profile>
+            },
+            {
+                path: '/detailedPage/:id',
+                element: <DetailedPage></DetailedPage>,
+                loader: () => fetch('/data.json')
             },
             {
                 path: "*",

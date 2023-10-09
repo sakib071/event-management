@@ -3,20 +3,25 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { getAuth, updateProfile } from "firebase/auth";
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [photo, setPhoto] = useState('');
     const [success, setSuccess] = useState('');
     const [registerError, setRegisterError] = useState('');
+    const auth = getAuth();
     const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
+        const photo = e.target.photo.value;
         const password = e.target.password.value;
         console.log(name, email, password);
 
@@ -32,12 +37,18 @@ const Register = () => {
             return;
         }
 
-
+        const handleUpdateProfile = (name, photo) => {
+            return updateProfile(auth.currentUser, {
+                displayName: name, photoURL: photo
+            })
+        }
 
         createUser(email, password)
             .then(result => {
+                handleUpdateProfile(name, photo)
                 console.log(result.user);
                 toast.success('User created successfully');
+                setName('');
                 setEmail('');
                 setPassword('');
                 navigate('/');
@@ -59,12 +70,20 @@ const Register = () => {
                     <div className="card flex-shrink-0 w-[70vw] max-w-sm shadow-2xl bg-base-100">
                         <form className="card-body" onSubmit={handleRegister}>
                             <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
+                                <input
+                                    type="name"
+                                    placeholder="Name"
+                                    name="name"
+                                    className="input input-bordered"
+                                    value={name}
+                                    onChange={e => setName(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-control">
                                 <input
                                     type="email"
-                                    placeholder="email"
+                                    placeholder="Email"
                                     name="email"
                                     className="input input-bordered"
                                     value={email}
@@ -73,9 +92,17 @@ const Register = () => {
                                 />
                             </div>
                             <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
+                                <input
+                                    type="photo"
+                                    placeholder="Photo URL"
+                                    name="photo"
+                                    className="input input-bordered"
+                                    value={photo}
+                                    onChange={e => setPhoto(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-control">
                                 <input
                                     type="password"
                                     placeholder="password"
