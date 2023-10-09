@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import Navbar from "../Navbar.jsx/Navbar";
 // import EventGallery from "../EventGallery/EventGallery";
 import Cards from "../Cards/Cards";
+import EventServices from "../../EventServices/EventServices";
+import Footer from "../../Footer/Footer";
+import Review from "../../Review/Review";
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -20,6 +23,9 @@ const Home = () => {
                 {/* <EventGallery cards={data}></EventGallery> */}
                 <Cards cards={data}></Cards>
             </div>
+            <Review></Review>
+            <EventServices cards={data}></EventServices>
+            <Footer></Footer>
         </div>
     );
 };

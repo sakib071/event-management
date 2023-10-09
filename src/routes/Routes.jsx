@@ -7,6 +7,7 @@ import EventServices from "../EventServices/EventServices";
 import EventGallery from "../pages/EventGallery/EventGallery";
 import Contact from "../pages/Contact/Contact";
 import PrivateRoute from "./PrivateRoute";
+import Profile from "../Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path: '/profile',
+                element: <Profile></Profile>
             }
         ]
     }

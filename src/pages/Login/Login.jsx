@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -18,11 +20,14 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('Login successfully');
                 e.target.reset();
-                navigate('/dashboard');
+                navigate('/');
             })
             .catch(error => {
                 console.error(error);
+                toast.error('Login failed, Try again!');
+
             })
     }
 
@@ -37,7 +42,6 @@ const Login = () => {
     }
 
     return (
-
         <div className="hero h-[80vh] bg-base-100">
             <div className="hero-content flex-col lg:flex-col">
                 <div className="text-center lg:text-left">
@@ -54,7 +58,6 @@ const Login = () => {
                                 type="email"
                                 placeholder="email"
                                 name="email"
-                                // ref={emailRef}
                                 className="input input-bordered"
                                 required
                             />
@@ -72,7 +75,7 @@ const Login = () => {
                             />
                             <label className="label text-sm">
                                 <a href="#" className="link-hover">Forgot password?</a>
-                                <a href="/register" className="link-hover">Don't have an account?</a>
+                                <a href="/register" className="link-hover">Dont have an account?</a>
                             </label>
                         </div>
                         <div className="form-control mt-6">
@@ -85,6 +88,7 @@ const Login = () => {
                     </form>
                 </div>
             </div >
+            <ToastContainer />
         </div >
     );
 };

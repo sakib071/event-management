@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -22,11 +24,11 @@ const Register = () => {
         setSuccess('');
 
         if (password.length < 6) {
-            setRegisterError('Password should be at least 6 characters or longer');
+            toast.error('Password should be at least 6 characters or longer');
             return;
         }
         else if (!/[A-Z]/.test(password)) {
-            setRegisterError('Your password should have at least one upper case characters.')
+            toast.error('Your password should have at least one upper case characters.')
             return;
         }
 
@@ -35,14 +37,15 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
-                setSuccess('User created successfully');
+                toast.success('User created successfully');
                 setEmail('');
                 setPassword('');
                 navigate('/');
             })
             .catch(error => {
                 console.error(error);
-                setRegisterError(error.message);
+                toast.error('Email already in use');
+                // setRegisterError(error.message);
             })
     }
     return (
@@ -99,6 +102,8 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
+
         </div>
     );
 };
