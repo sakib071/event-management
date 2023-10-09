@@ -1,21 +1,18 @@
-import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
-import Navbar from "../pages/Navbar.jsx/Navbar";
 import ServiceCard from "./ServiceCard";
 
-const EventServices = ({ cards }) => {
+const EventServices = () => {
 
-    const [myCard, setMyCard] = useState(cards);
+    const [myCard, setMyCard] = useState([]);
 
     useEffect(() => {
-        if (cards && cards.length > 0) {
-            setMyCard(cards);
-        }
-    }, [cards]);
+        fetch("data.json")
+            .then(res => res.json())
+            .then(data => setMyCard(data))
+    }, [])
 
     return (
         <div>
-            <Navbar></Navbar>
             <h3 className='text-3xl font-bold text-center mt-32 mb-14'>Featured Services</h3>
             <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-auto mb-36">
                 {
@@ -25,10 +22,5 @@ const EventServices = ({ cards }) => {
         </div>
     );
 };
-
-EventServices.propTypes = {
-    cards: PropTypes.array.isRequired,
-}
-
 
 export default EventServices;

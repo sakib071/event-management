@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ card }) => {
 
     const { id, eventType, title, description, image, category } = card || {}
+    
     return (
         <Link to={`/card/${id}`} className="hover:w-full transition ease-in-out">
             <div className="card-compact shadow-xl flex flex-row mx-auto max-w-full h-full rounded-lg hover:scale-105" >

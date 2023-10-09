@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
-import Navbar from "../Navbar.jsx/Navbar";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content bg-base-100 shadow-md rounded-lg">
                     <div className="text-left p-5 space-y-5 max-w-md">

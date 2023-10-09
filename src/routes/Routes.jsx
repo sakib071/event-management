@@ -3,11 +3,12 @@ import Root from "../layouts/Root";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import EventServices from "../EventServices/EventServices";
+import EventServices from "../pages/EventServices/EventServices";
 import EventGallery from "../pages/EventGallery/EventGallery";
 import Contact from "../pages/Contact/Contact";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../Profile/Profile";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,6 @@ const router = createBrowserRouter([
             {
                 path: '/gallery',
                 element: <PrivateRoute><EventGallery></EventGallery></PrivateRoute>,
-                loader: () => fetch('/data.json')
             },
             {
                 path: '/login',
@@ -43,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile',
                 element: <Profile></Profile>
+            },
+            {
+                path: "*",
+                element: <ErrorPage></ErrorPage>
             }
         ]
     }

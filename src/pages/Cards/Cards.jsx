@@ -46,12 +46,10 @@ const Cards = ({ cards }) => {
                     </div>
                 </div>
             </div>
-            {/* <div className="absolute bottom-80 lg:bottom-96 left-1/2 flex flex-col text-center -translate-x-2/4  rounded-md">
-                <p className="text-2xl lg:text-5xl text-black font-bold m-5 lg:m-10">Learn and Grow</p>
-            </div> */}
-            <div className="py-10 mx-auto">
+
+            <div className="py-10 mx-auto" >
                 <h3 className="text-3xl font-bold text-center mt-32 mb-14">All Events</h3>
-                <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mx-auto">
+                <div data-aos="fade-up" className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mx-auto">
                     {
                         myCard?.map(card => <Card key={card.id} card={card}></Card>)
                     }
