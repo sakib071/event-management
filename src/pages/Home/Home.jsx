@@ -5,6 +5,7 @@ import Review from "../../Review/Review";
 import EventServices from "../EventServices/EventServices";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Speciality from "../../Speciality/Speciality";
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -26,6 +27,7 @@ const Home = () => {
                 <Cards cards={data}></Cards>
             </div>
             <Review></Review>
+            <Speciality></Speciality>
             <EventServices cards={data}></EventServices>
         </div>
     );
