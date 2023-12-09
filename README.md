@@ -1,8 +1,9 @@
-# React + Vite
+[Live link](https://social-management-9760b.web.app)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Some of the features and technologies of the event management project are:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User can search and book events based on different categories, such as silver, platinum, or gold.
+- User can see customer reviews, management specialties, services, and event gallery on the website.
+- I used Node.js and MongoDB for the backend, which are popular and powerful tools for web development.
+- I used Tailwind CSS and DaisyUI for the frontend, which are modern and responsive frameworks for styling your website.
+- I used Firebase for authentication, which is a secure and scalable platform for managing user accounts and data.
